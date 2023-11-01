@@ -489,7 +489,7 @@ suorittaa valmiiksi määritellyn actionin [checkout](https://github.com/marketp
 
 Eli _checkout_ action siis hakee repositorion koodin askeleet suorittavalle virtuaalikoneelle.
 
-Toinen askel on action [setup-python](https://github.com/marketplace/actions/setup-python), joka asentaan työn suorittavalle virtuaalikoneelle haluamme Python-version. Jostain syystä versionumero on annettava hipsuissa, eli muodossa '3.10', jos hipsuja ei ole, yrtää GitHub Actions asettaa Pythonista version 3.1
+Toinen askel on action [setup-python](https://github.com/marketplace/actions/setup-python), joka asentaan työn suorittavalle virtuaalikoneelle haluamme Python-version. Jostain syystä versionumero on annettava hipsuissa, eli muodossa '3.10', jos hipsuja ei ole, yrittää GitHub Actions asettaa Pythonista version 3.1
 
 Molemmat näistä actioneista olivat GitHubin [marketplacesta](https://github.com/marketplace?type=actions) löytyviä valmiita actioneja. Esim. Pythonin asentaminen työn suorittavalle virtuaalikoneelle on itsessään aika monimutkainen toimenpide, mutta valmiiksi määritelty action tekee sen helpoksi.
 
@@ -602,7 +602,7 @@ hint: or --ff-only on the command line to override the configured default per
 hint: invocation.
 ```
 
-Käytännössä Git haluaa tietää minkälaisella strategialla paikallisen ja etärepositoriosi koodi tulisi yhdistää. Vaihtoehdoista kannattanee valita keskimäinen, eli anna komentorivillä komento
+Käytännössä Git haluaa tietää minkälaisella strategialla paikallisen ja etärepositoriosi koodi tulisi yhdistää. Vaihtoehdoista kannattanee valita keskimmäinen, eli anna komentorivillä komento
 
 ```
 git config pull.rebase true 
@@ -747,7 +747,7 @@ Tutustu riippuvuuksien injektointiin esimerkin avulla. Asenna projektin riippuvu
 
 ```python
 stats = StatisticsService(
-  PlayerReader("https://studies.cs.helsinki.fi/nhlstats/2022-23/players.txt")
+  PlayerReader("https://studies.cs.helsinki.fi/nhlstats/2021-22/players.txt")
 )
 ```
 
@@ -796,7 +796,7 @@ Kun injektoit `PlayerReaderStub`-olion testissä `StatisticsService`-oliolle, pa
 
 **Tämä tehtävä tehdään juuri luomaasi palautusrepositorioon, eli EI KÄYTETÄ ohtuvarasto-repositorioa mihin teit tehtävät 2-13**
 
-Muuta luokan `StatisticsService` metodia `top` siten, että sille voidaan antaa toinen parametri, joka määrittelee millä "parhausperusteella" metodi palauttaa pelaajat.
+Muuta luokan `StatisticsService` metodia `top` siten, että sille voidaan antaa toinen parametri, joka määrittelee millä "parhausperustella" metodi palauttaa pelaajat.
 
 Metodin toiminnallisuus selviää seuraavasta:
 
