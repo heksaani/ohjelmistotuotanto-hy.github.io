@@ -830,7 +830,7 @@ def recommended_news_generator(user):
         return recommendation_algoritm(user)
 ```
 
-Osassa 2 [Lean-startup](osa2/#vaatimusmäärittely-2010-luvulla)-menetelmän yhteydessä mainittu A/B-testaus toteutetaan yleensä feature-togglejen avulla.
+Osassa 2 [Lean-startup](/osa2/#vaatimusmäärittely-2010-luvulla)-menetelmän yhteydessä mainittu A/B-testaus toteutetaan yleensä feature-togglejen avulla.
 
 Canary releaset ja A/B-testaus eivät ole feature togglejen ainoa sovellus, niitä käytetään
 yleisesti myös eliminoimaan tarve pitkäikäisille _feature brancheille_. Eli sen sijaan, että uusia ominaisuuksia toteutetaan erilliseen versionhallinnan haaraan, joka ominaisuuksien valmistumisen yhteydessä mergetään pääkehityshaaraan, uudet ominaisuudet tehdään suoraan pääkehityshaaraan, mutta ne piilotetaan käyttäjiltä feature toggleilla.
